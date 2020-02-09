@@ -1,0 +1,13 @@
+.Blue {
+  height: 200px;
+  min-width: 77px;
+  max-width: 90vw;
+  position: absolute;
+  top: 115%;
+  right: 0;
+  background-color: rgb(195, 255, 230);
+  border: 3px solid rgb(147, 243, 211);
+  border-radius: 50px;
+  box-shadow: -16px 16px 16px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}

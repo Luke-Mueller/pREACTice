@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
+import Red from './components/red/red';
+import Green from './components/green/green';
+import Blue from './components/blue/blue';
+import DarkBlue from './components/darkBlue/darkBlue';
+
 function App() {
+  const [posY, setPosY] = useState(0);
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      setPosY(window.pageYOffset);
+    });
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Red posY={posY} />
+      <Blue posY={posY} />
+      <Green posY={posY} />
+      <DarkBlue posY={posY} />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+.Red {
+  height: 200px;
+  min-width: 77px;
+  max-width: 77vw;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(243, 175, 150);
+  border: 3px solid rgb(240, 213, 163);
+  border-radius: 50px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.6);
+}
