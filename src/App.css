@@ -4,6 +4,7 @@
 }
 
 .App {
-  height: 401vh;
+  height: 600vh;
+  width: 100vw;
   background: greenyellow;
 }
