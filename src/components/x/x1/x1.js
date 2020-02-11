@@ -16,8 +16,8 @@ const X1 = () => {
 
   return (
     <div className="X_Container" onClick={clickHandler}>
-      <div className="X_Div"></div>
-      <div className="X_Div"></div>
+      {/* <div className="X_Div"></div> */}
+      {/* <div className="X_Div"></div> */}
       <div className="X_Div"></div>
     </div>
   )

@@ -65,10 +65,10 @@
     transform: translateY(150%) rotate(-45deg);
   }
   50% {
-    transform: translateY(-100%) rotate(0);
+    transform: translateY(-100%) rotate(360deg);
   }
   100% {
-    transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(360deg);
   }
 }
 
@@ -92,10 +92,10 @@
     transform: translateY(-150%) rotate(45deg);
   }
   50% {
-    transform: translateY(100%) rotate(0);
+    transform: translateY(100%) rotate(-360deg);
   }
   100% {
-    transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(-360deg);
   }
 } 
 
