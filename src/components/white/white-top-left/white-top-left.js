@@ -1,8 +1,10 @@
 import React from 'react';
 
-import styles from './white1.module.css';
+import styles from '../white.module.css';
+import positions from './white-top-left.module.css';
 
-const White1 = props => {
+const WhiteUL = props => {
+  const className = `${styles.White} ${positions.top_left}`;
   let style;
 
   if (props.posY < 2500) {
@@ -14,7 +16,6 @@ const White1 = props => {
       border: 'none'
     }
   } else {
-    
     style = {
       height: props.posY - 2500 + 'px',
       width: props.posY - 2500 + 'px',
@@ -23,11 +24,11 @@ const White1 = props => {
 
   return (
     <div
-      className={styles.White}
-      style={ style }>
+      className={className}
+      style={style}>
       {props.children}
     </div>
   )
 };
 
-export default White1; 
+export default WhiteUL; 

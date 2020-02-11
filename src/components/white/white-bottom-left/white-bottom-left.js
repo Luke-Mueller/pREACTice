@@ -1,8 +1,10 @@
 import React from 'react';
 
-import styles from './white3.module.css';
+import styles from '../white.module.css';
+import positions from './white-bottom-left.module.css';
 
-const White3 = props => {
+const WhiteBL = props => {
+  const className = `${styles.White} ${positions.bottom_left}`;
   let style;
 
   if (props.posY < 2500) {
@@ -14,20 +16,19 @@ const White3 = props => {
       border: 'none'
     }
   } else {
-    
     style = {
       height: props.posY - 2500 + 'px',
       width: props.posY - 2500 + 'px',
     }
-  }
+  };
 
   return (
     <div
-      className={styles.White}
-      style={ style }>
+      className={className}
+      style={style}>
       {props.children}
     </div>
   )
 };
 
-export default White3; 
+export default WhiteBL; 

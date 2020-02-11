@@ -1,8 +1,10 @@
 import React from 'react';
 
-import styles from './white2.module.css';
+import styles from '../white.module.css';
+import positions from './white-bottom-right.module.css';
 
-const White2 = props => {
+const WhiteBR = props => {
+  const className = `${styles.White} ${positions.bottom_right}`;
   let style;
 
   if (props.posY < 2500) {
@@ -23,11 +25,11 @@ const White2 = props => {
 
   return (
     <div
-      className={styles.White}
+      className={className}
       style={ style }>
       {props.children}
     </div>
   )
 };
 
-export default White2; 
+export default WhiteBR; 
