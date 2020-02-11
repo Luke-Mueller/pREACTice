@@ -1,15 +1,8 @@
 import React from 'react';
 
-import './x.css';
+import './x1.css';
 
-const X = props => {
-  // const [isActive, setIsActive] = useState(false)
-  // let style;
-  // if (props.posY < 2500) {
-  //   style = {
-
-  //   }
-  // }
+const X1 = () => {
 
   const clickHandler = e => {
     const className = e.target.className;
@@ -19,7 +12,6 @@ const X = props => {
     } else {
       e.target.className = "X_Container";
     }
-
   };
 
   return (
@@ -31,4 +23,4 @@ const X = props => {
   )
 };
 
-export default X;
+export default X1;

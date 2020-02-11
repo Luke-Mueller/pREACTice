@@ -9,8 +9,8 @@ import WTL from './components/white/white-top-left/white-top-left';
 import WTR from './components/white/white-top-right/white-top-right';
 import WBL from './components/white/white-bottom-left/white-bottom-left';
 import WBR from './components/white/white-bottom-right/white-bottom-right';
-import X from './components/x/x';
-import X2 from './components/x2/x2';
+import X1 from './components/x/x1/x1';
+import X2 from './components/x/x2/x2';
 
 function App() {
   const [posY, setPosY] = useState(0);
@@ -29,7 +29,7 @@ function App() {
       <Green posY={posY} />
       <DarkBlue posY={posY}>
         <WTL posY={posY}>
-          <X />
+          <X1 />
         </WTL>
         <WTR posY={posY}>
           <X2 />
