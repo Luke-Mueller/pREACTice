@@ -1,3 +1,14 @@
+This is a practice UI using react.
+To view, run 
+$ npm install
+
+and then
+
+$ npm start
+
+The project can be found on localhost:3000
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
