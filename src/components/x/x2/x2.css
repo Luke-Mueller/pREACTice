@@ -18,16 +18,10 @@
 .X2_Div {
   height: 20%;
   width: 90%;
-  background-color: rgba(142, 142, 187, 0.8);
-  border-radius: 10px;
-  box-shadow: inset -2px 2px 2px rgba(235, 235, 247, 0.8);
-  transition: all 250ms ease-in-out;
-  z-index: -1;
-}
-
-.X2_Container:hover div {
   background-color: rgba(3, 3, 41, 0.8);
   box-shadow: inset -2px 2px 2px rgba(190, 190, 214, 0.8);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 /* Div active styles */

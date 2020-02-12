@@ -11,6 +11,8 @@ import WBL from './components/white/white-bottom-left/white-bottom-left';
 import WBR from './components/white/white-bottom-right/white-bottom-right';
 import X1 from './components/x/x1/x1';
 import X2 from './components/x/x2/x2';
+import X3 from './components/x/x3/x3';
+import X4 from './components/x/x4/x4';
 
 function App() {
   const [posY, setPosY] = useState(0);
@@ -18,7 +20,6 @@ function App() {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setPosY(window.pageYOffset);
-      console.log(window.pageYOffset);
     });
   }, [])
 
@@ -35,10 +36,10 @@ function App() {
           <X2 />
         </WTR>
         <WBL posY={posY}>
-
+          <X3 />
         </WBL>
         <WBR posY={posY}>
-
+          <X4 /> 
         </WBR>
       </DarkBlue>
     </div>
