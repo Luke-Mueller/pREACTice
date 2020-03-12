@@ -1,5 +1,10 @@
 import React from 'react';
 
+import WTL from '../white/white-top-left/white-top-left';
+import WTR from '../white/white-top-right/white-top-right';
+import WBL from '../white/white-bottom-left/white-bottom-left';
+import WBR from '../white/white-bottom-right/white-bottom-right';
+
 import './darkBlue.css';
 
 const DarkBlue = props => {
@@ -13,7 +18,10 @@ const DarkBlue = props => {
         height: height,
         width: width
       }}>
-      {props.children}
+      <WTL posY={props.posY} />
+      <WTR posY={props.posY} />
+      <WBL posY={props.posY} />
+      <WBR posY={props.posY} />
     </div>
 
   )

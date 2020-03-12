@@ -1,5 +1,7 @@
 import React from 'react';
 
+import X4 from '../../x/x4/x4';
+
 import styles from '../white.module.css';
 import positions from './white-bottom-right.module.css';
 
@@ -16,7 +18,7 @@ const WhiteBR = props => {
       border: 'none'
     }
   } else {
-    
+
     style = {
       height: props.posY - 2500 + 'px',
       width: props.posY - 2500 + 'px',
@@ -24,10 +26,8 @@ const WhiteBR = props => {
   }
 
   return (
-    <div
-      className={className}
-      style={ style }>
-      {props.children}
+    <div className={className} style={style}>
+      <X4 />
     </div>
   )
 };

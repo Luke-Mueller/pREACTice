@@ -1,5 +1,7 @@
 import React from 'react';
 
+import X1 from '../../x/x1/x1';
+
 import styles from '../white.module.css';
 import positions from './white-top-left.module.css';
 
@@ -23,10 +25,8 @@ const WhiteUL = props => {
   }
 
   return (
-    <div
-      className={className}
-      style={style}>
-      {props.children}
+    <div className={className} style={style}>
+      <X1 />
     </div>
   )
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import X3 from '../../x/x3/x3';
+
 import styles from '../white.module.css';
 import positions from './white-bottom-left.module.css';
 
@@ -23,10 +25,8 @@ const WhiteBL = props => {
   };
 
   return (
-    <div
-      className={className}
-      style={style}>
-      {props.children}
+    <div className={className} style={style}>
+      <X3 />
     </div>
   )
 };
