@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import PosYContext from '../../context/posY-context';
 
 import styles from './green.module.css';
 
 const Green = props => {
-  const height = props.posY * 1.97 - 1800 + 'px';
-  const width = props.posY * 2.05 - 1875 + 'px';
+  const global = useContext(PosYContext);
+  const height = global.posY * 1.97 - 1800 + 'px';
+  const width = global.posY * 2.05 - 1875 + 'px';
 
   return (
     <div 

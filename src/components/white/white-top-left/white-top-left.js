@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import PosYContext from '../../../context/posY-context';
 
 import X1 from '../../x/x1/x1';
 
 import styles from '../white.module.css';
 import positions from './white-top-left.module.css';
 
-const WhiteUL = props => {
+const WhiteUL = () => {
+  const global = useContext(PosYContext);
   const className = `${styles.White} ${positions.top_left}`;
   let style;
 
-  if (props.posY < 2500) {
+  if (global.posY < 2500) {
     style = {
       height: 0,
       width: 0,
@@ -19,8 +22,8 @@ const WhiteUL = props => {
     }
   } else {
     style = {
-      height: props.posY - 2500 + 'px',
-      width: props.posY - 2500 + 'px',
+      height: global.posY - 2500 + 'px',
+      width: global.posY - 2500 + 'px',
     }
   }
 

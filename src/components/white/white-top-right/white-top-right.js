@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import PosYContext from '../../../context/posY-context';
 
 import X2 from '../../x/x2/x2';
 
 import styles from '../white.module.css';
 import positions from './white-top-right.module.css';
 
-const White2 = props => {
+const White2 = () => {
+  const global = useContext(PosYContext);
   const className = `${styles.White} ${positions.top_right}`;
   let style;
 
-  if (props.posY < 2500) {
+  if (global.posY < 2500) {
     style = {
       height: 0,
       width: 0,
@@ -20,8 +23,8 @@ const White2 = props => {
   } else {
 
     style = {
-      height: props.posY - 2500 + 'px',
-      width: props.posY - 2500 + 'px',
+      height: global.posY - 2500 + 'px',
+      width: global.posY - 2500 + 'px',
     }
   }
 

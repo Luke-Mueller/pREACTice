@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import PosYContext from '../../context/posY-context';
 
 import WTL from '../white/white-top-left/white-top-left';
 import WTR from '../white/white-top-right/white-top-right';
@@ -7,9 +9,10 @@ import WBR from '../white/white-bottom-right/white-bottom-right';
 
 import './darkBlue.css';
 
-const DarkBlue = props => {
-  const height = props.posY * 2 - 2800 + 'px';
-  const width = props.posY * 1.75 - 2875 + 'px';
+const DarkBlue = () => {
+  const global = useContext(PosYContext);
+  const height = global.posY * 2 - 2800 + 'px';
+  const width = global.posY * 1.75 - 2875 + 'px';
 
   return (
     <div
@@ -18,10 +21,10 @@ const DarkBlue = props => {
         height: height,
         width: width
       }}>
-      <WTL posY={props.posY} />
-      <WTR posY={props.posY} />
-      <WBL posY={props.posY} />
-      <WBR posY={props.posY} />
+      <WTL />
+      <WTR />
+      <WBL />
+      <WBR />
     </div>
 
   )
