@@ -1,0 +1,12 @@
+.Beach {
+  height: 450vh;
+  width: 100%;
+  /* background-color: chartreuse; */
+  background-image: url('/assets/hammock.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  top: 450%;
+  z-index: 1;
+}

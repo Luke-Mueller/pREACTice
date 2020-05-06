@@ -4,7 +4,7 @@
 }
 
 .App {
-  height: 450vh;
+  height: 900vh;
   width: 100vw;
   background: rgb(207, 102, 4);
 }
@@ -17,7 +17,6 @@
 
 img {
   height: 25vh;
-  /* width: 90px; */
 }
 
 h1 {

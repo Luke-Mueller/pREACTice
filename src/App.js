@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import PosYContext from './context/posY-context';
 
-import Red from './components/red/red';
-import Green from './components/green/green';
+import Beach from './components/beach/beach';
 import Blue from './components/blue/blue';
 import DarkBlue from './components/darkBlue/darkBlue';
+import Green from './components/green/green';
+import Red from './components/red/red';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ function App() {
         <Blue />
         <Green />
         <DarkBlue />
+        <Beach />
       </PosYContext.Provider>
     </div>
   );
